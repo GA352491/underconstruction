@@ -17,8 +17,9 @@
         body {
             font-family: 'Lora', serif;
         }
-        .row{
-            {#width: 100%;#}
+
+        .row {
+        {#width: 100%;#}
         }
     </style>
 </head>
@@ -26,7 +27,7 @@
 <body>
 
 <div class="container-fluid">
-    <div class="row" >
+    <div class="row">
 
         <div class="col-lg">
 
@@ -55,23 +56,26 @@
                     <p class="text-center">Event : {{ event.when|date:'d,M,Y, H:m:s' }}</p>
 
                 </div>
-                <div class="row text-center g-lg-2" style="margin-left: 120px">
-                    <div class="col-2">
-                        <div id="countdown-box-d"></div>
-                        <p>Days</p>
-                    </div>
-                    <div class="col-2">
-                        <div id="countdown-box-h"></div>
-                        <p>Hours</p>
-                    </div>
-                    <div class="col-2">
-                        <div id="countdown-box-m"></div>
-                        <p>Minutes</p>
+                <div class="mx-lg-5 ">
+                    <div class="row text-center g-lg-2 mx-lg-5 p-5">
 
-                    </div>
-                    <div class="col-2">
-                        <div id="countdown-box-s"></div>
-                        <p>Seconds</p>
+                        <div class="col-3">
+                            <div id="countdown-box-d"></div>
+                            <p>Days</p>
+                        </div>
+                        <div class="col-3">
+                            <div id="countdown-box-h"></div>
+                            <p>Hours</p>
+                        </div>
+                        <div class="col-3">
+                            <div id="countdown-box-m"></div>
+                            <p>Minutes</p>
+
+                        </div>
+                        <div class="col-3">
+                            <div id="countdown-box-s"></div>
+                            <p>Seconds</p>
+                        </div>
                     </div>
                 </div>
                 {#                <div id="countdown-box" class="text-center mt-3 h2">#}
