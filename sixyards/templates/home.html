@@ -85,19 +85,26 @@
                 {#                </div>#}
 
             </div>
-            <form method="post" class=" mt-5" style="padding-left: 140px">
-                {% csrf_token %}
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" name="email" id="exampleInputEmail1"
-                           aria-describedby="emailHelp"
-                           style="width: 200px">
-                    <div id="emailHelp" class="form-text">Enter email to get early notification of our launch date</div>
-                </div>
+            <div class="mx-lg-5 ">
+                <form method="post" class=" mt-5 px-5 mx-5">
+                    {% csrf_token %}
 
-                <button type="submit" class="btn " style="background-color: #CAAA48;color: white;width: 120px">Submit
-                </button>
-            </form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" name="email" id="exampleInputEmail1"
+                               aria-describedby="emailHelp"
+                               style="width: 250px">
+                        <div id="emailHelp" class="form-text">Enter email to get early notification of our launch
+                            date
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn " style="background-color: #CAAA48;color: white;width: 120px">
+                        Submit
+                    </button>
+
+                </form>
+            </div>
             <div class="mt-5 mb-5 pb-5 pt-5"></div>
 
         </div>
