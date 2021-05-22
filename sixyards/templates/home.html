@@ -18,7 +18,7 @@
             font-family: 'Lora', serif;
         }
         .row{
-            width: 100%;
+            {#width: 100%;#}
         }
     </style>
 </head>
@@ -55,7 +55,7 @@
                     <p class="text-center">Event : {{ event.when|date:'d,M,Y, H:m:s' }}</p>
 
                 </div>
-                <div class="row text-center g-2" style="margin-left: 120px">
+                <div class="row text-center g-lg-2" style="margin-left: 120px">
                     <div class="col-2">
                         <div id="countdown-box-d"></div>
                         <p>Days</p>
@@ -87,14 +87,14 @@
                     <label for="exampleInputEmail1" class="form-label">Email address</label>
                     <input type="email" class="form-control" name="email" id="exampleInputEmail1"
                            aria-describedby="emailHelp"
-                           style="width: 300px">
+                           style="width: 200px">
                     <div id="emailHelp" class="form-text">Enter email to get early notification of our launch date</div>
                 </div>
 
                 <button type="submit" class="btn " style="background-color: #CAAA48;color: white;width: 120px">Submit
                 </button>
             </form>
-            <div class="mt-5 mb-5 pt-5"></div>
+            <div class="mt-5 mb-5 pb-5 pt-5"></div>
 
         </div>
     </div>
