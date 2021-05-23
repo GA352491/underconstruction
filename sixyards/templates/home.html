@@ -41,45 +41,44 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg "
-             style="background: #212040;color: white;">
+        <div class="col-lg p-lg-5 " style="background: #212040;color: white;">
             <div class="d-flex justify-content-center">
                 <img src="{% static 'logos/TSY_Logo - Copy.png' %}" alt="" class="img-fluid   "
                      style="height: 200px;">
             </div>
-            <h1 class="text-center mt-lg-2 " style="font-size: 30px">Coming Soon</h1>
-            <div class="p-lg-5 text-center">
+            <h1 class=" mt-lg-2 " style="font-size: 30px">Coming Soon</h1>
+            <div class=" ">
                 <p>We should be back shortly, Thank you for patience </p>
                 <span> We're redesigning our website to make it more <p>convenient and user friendly</p></span>
 
             </div>
             <div>
-                <div id="event-box">
-                    <p class="text-center">Event : {{ event.when|date:'d,M,Y, H:m:s' }}</p>
+                <div id="event-box" class="mt-5">
+                    <p class="">Event : {{ event.when|date:'d,M,Y, H:m:s' }}</p>
 
                 </div>
-                <div class="mx-lg-5 ">
-                    <div class="row text-center g-lg-2 mx-lg-5 p-5">
 
-                        <div class="col-3">
-                            <div id="countdown-box-d"></div>
-                            <p>Days</p>
-                        </div>
-                        <div class="col-3">
-                            <div id="countdown-box-h"></div>
-                            <p>Hours</p>
-                        </div>
-                        <div class="col-3">
-                            <div id="countdown-box-m"></div>
-                            <p>Minutes</p>
+                <div class="row">
 
-                        </div>
-                        <div class="col-3">
-                            <div id="countdown-box-s"></div>
-                            <p>Seconds</p>
-                        </div>
+                    <div class="col-3">
+                        <div id="countdown-box-d"></div>
+                        <p>Days</p>
+                    </div>
+                    <div class="col-3">
+                        <div id="countdown-box-h"></div>
+                        <p>Hours</p>
+                    </div>
+                    <div class="col-3">
+                        <div id="countdown-box-m"></div>
+                        <p>Minutes</p>
+
+                    </div>
+                    <div class="col-3">
+                        <div id="countdown-box-s"></div>
+                        <p>Seconds</p>
                     </div>
                 </div>
+
                 {#                <div id="countdown-box" class="text-center mt-3 h2">#}
                 {##}
                 {#                    <div class="spinner-border" role="status"></div>#}
@@ -87,27 +86,28 @@
                 {#                </div>#}
 
             </div>
-            <div class="mx-lg-5 ">
-                <form method="post" class=" mt-5 px-lg-5 mx-5 px-3 ">
-                    {% csrf_token %}
 
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" name="email" id="exampleInputEmail1"
-                               aria-describedby="emailHelp"
-                               style="width: 250px">
-                        <div id="emailHelp" class="form-text">
-                            Enter email to get early notification of our launch date
-                        </div>
-                    </div>
+            <form method="post" class=" mt-5  ">
+                {% csrf_token %}
 
-                    <button type="submit" class="btn " style="background-color: #CAAA48;color: white;width: 120px">
+                <div class="mb-3 d-flex">
+                    <input type="email" class="form-control" name="email" id="exampleInputEmail1"
+                           aria-describedby="emailHelp" placeholder="Email address"
+                           style="width: 250px">
+                    <button type="submit" class="btn mx-2" style="background-color: #CAAA48;color: white;width: 120px">
                         Submit
                     </button>
 
-                </form>
-            </div>
-            <div class="mt-5 mb-5 pb-5 pt-5"></div>
+                </div>
+                <div id="emailHelp" class="form-text ">
+                    Enter email to get early notification of our launch date
+                </div>
+
+
+            </form>
+
+{#            <div class="mt-5 mb-5 pb-5 pt-5"></div>#}
+{#            <div class="mt-5 pt-5"></div>#}
 
         </div>
     </div>
