@@ -13,7 +13,7 @@ def home(request):
         mail = request.POST.get('email')
         Emails.objects.create(mails=mail)
     context = {'event': event, 'today': today}
-    return render(request, 'home.html', context)
+    return render(request, 'home.html')
 
 
 def error_404_view(request, exception):
